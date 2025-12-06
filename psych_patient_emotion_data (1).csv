@@ -1,0 +1,271 @@
+text,type,admiration,amusement,anger,annoyance,approval,caring,confusion,curiosity,desire,disappointment,disapproval,disgust,embarrassment,excitement,fear,gratitude,grief,joy,love,nervousness,optimism,pride,realization,relief,remorse,sadness,surprise,neutral
+I constantly feel like I am worthless and a burden to others.,original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"Honestly, everyone around me would probably be better off if I wasn't here weighing them down.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+I can't shake this conviction that I offer zero value to the world.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+It feels like I'm just dead weight dragging my family and friends down.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+My existence seems to be nothing more than an imposition on other people.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+I look at myself and just see a waste of space that causes problems for everyone else.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+I feel confident in myself and my abilities.,original,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+I know I've got what it takes to handle whatever comes my way.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+There's a strong sense of self-assurance running through me right now.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+I don't doubt my skills; I'm actually pretty capable.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+I'm standing on solid ground regarding who I am and what I can do.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"For once, the imposter syndrome is gone and I actually believe in me.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+"Sleeping well, no major issues with rest.",original,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+I'm actually getting a solid eight hours without tossing and turning.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Rest hasn't been a struggle lately; I'm out like a light.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"Thankfully, insomnia isn't on my list of problems right now.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+My sleep hygiene is working; I wake up feeling decent.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"No complaints in the bedroom department, I'm sleeping soundly.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+I feel fine and enjoy my hobbies as usual.,original,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Everything's pretty good, I'm still getting a kick out of painting on weekends.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+I'm in a good headspace and keeping up with the things I love doing.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"Life is normal, in a good way; I haven't lost interest in my pastimes.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"I'm content, just doing my usual stuff and having fun with it.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Honestly? I'm okay. Still finding joy in the little things I do for fun.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"I am always exhausted, even talking feels like too much effort.",original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"My battery is permanently at 1%, I can barely summon the energy to speak.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It feels like I'm wading through molasses; even simple conversation wipes me out.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I am drained to my core, so please forgive me if forming sentences is hard.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The fatigue is crushing me; just opening my mouth is a chore.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I'm just so incredibly tired, to the point where words feel heavy.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Most days I feel hopeless and empty.,original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+It's rare that I see any light at the end of the tunnel; it's just a void.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+I wake up and there's just this hollow sensation where my hope used to be.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+The majority of my time is spent feeling like there's nothing left for me.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+I'm running on empty and I honestly don't see the point anymore.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+Despair is pretty much my baseline state these days.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I feel like I am not good enough, and it bothers me a lot.",original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+It really gets under my skin that I can never seem to measure up.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+I'm constantly agitated by this nagging thought that I'm inadequate.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+The fear that I'm insufficient is eating away at me.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+"I can't ignore this feeling of falling short, and it's frustrating.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+Why can't I just be enough? It's genuinely distressing me.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+I have slight trouble falling asleep but not every night.,original,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"It's a bit annoying that I toss and turn some nights, but it's not chronic.",augmented,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"Sleep is mostly okay, though I do hit a few bumps in the road occasionally.",augmented,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"I wouldn't call it insomnia, but drifting off isn't always instant.",augmented,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"There are some evenings where my brain won't shut off, but it's manageable.",augmented,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+It's hit or miss; sometimes I'm awake longer than I'd like.,augmented,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"I sometimes think about disappearing, but I wouldn’t act on it.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I fantasize about just vanishing into thin air, even though I know I won't do anything drastic.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"The idea of ceasing to exist is comforting, but it's just a thought, not a plan.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I catch myself wishing I could just fade away, though I'm safe.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Sometimes I wonder what it would be like to just stop being here, but I wouldn't hurt myself.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"It's a passive thing, really—thinking about not existing—but I'm not going to take action.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I feel empty and disconnected from everything, like life is meaningless.",original,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+It's like there's a glass wall between me and the rest of the world; nothing matters.,augmented,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I'm experiencing this profound numbness, like I'm just watching a movie of a pointless life.",augmented,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I can't feel a connection to anything, it all just seems so futile.",augmented,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+There's just this void inside me where purpose used to be.,augmented,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I'm untethered from reality, and I can't find a reason for any of it.",augmented,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I can barely sleep at night, and when I do, I wake up frequently.",original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+My nights are a disaster; I'm either staring at the ceiling or waking up every hour.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Getting a continuous block of rest feels impossible lately.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"It's frustrating because even when I drift off, I just snap back awake moments later.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I'm lucky if I get any sleep at all, and it's never uninterrupted.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The pattern is broken; I nod off but can't stay under.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I feel a little more tired than usual, but I manage.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"Energy is a bit low, sure, but I'm pushing through it just fine.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"I'm dragging slightly more than normal, but it's not stopping me.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"It's manageable fatigue, nothing I can't handle.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"I've noticed I'm sleepier, but I'm still getting things done.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"Despite the extra tiredness, I'm coping alright.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+"I feel physically sluggish all the time, like I’m weighed down.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It feels like gravity has doubled; moving my limbs takes so much effort.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"My body feels incredibly heavy, like I'm walking through wet concrete.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I can't shake this physical slowness; it's like wearing a lead suit.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+There's a constant drag on my body that makes me feel so slow.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Every movement is a struggle against this feeling of being weighed down.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+People tell me I seem lifeless or that I barely move anymore.,original,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+"My friends have commented that I look like a zombie, just sitting there motionless.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+It's apparently obvious to others that I've lost my spark and stopped moving around.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+"I've been told I'm essentially a statue these days, which hurts to hear.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+Others notice that I'm just existing without really animating or doing anything.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+The feedback I get is that I seem totally drained of life.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+I get distracted easily but can regain focus quickly.,original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"My mind wanders off, but I'm pretty good at snapping it back to the task.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"I might lose my train of thought for a second, but I recover fast.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Focus isn't perfect, but I can correct course without much trouble.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"I have these moments of distraction, yet I always get back on track.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Attention slips, but I catch it.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"I have lost interest in everything, I feel like nothing matters.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+The things I used to love just seem grey and pointless now.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+I can't find a reason to care about anything anymore; it's all meaningless.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+Apathy has totally taken over; I don't see the value in anything.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+It feels like my ability to enjoy life has just been deleted.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"Nothing matters to me, and I've stopped pretending that it does.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+"Eating habits are normal, no major appetite changes.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"Thankfully, my relationship with food hasn't changed; I'm eating fine.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I haven't noticed any spikes or drops in hunger.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"Meals are standard, no issues there.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Appetite is one thing that's actually remained stable.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I'm maintaining my diet as usual.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"Sleeping has become inconsistent, I either sleep too much or too little.",original,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I don't get it—one night I'm hibernating for 12 hours, the next I get zero.",augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's all over the place; I'm either exhausted from insomnia or oversleeping.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"My schedule is chaotic, swinging between hibernation and sleeplessness.",augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I can't predict my rest; it's feast or famine with sleep hours.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's annoying that I can't find a middle ground—it's always too much or not enough.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I struggle to concentrate on my assignments and lose track easily.,original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"I sit down to work, but my brain just won't stick to the page.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+It's nerve-wracking because I keep losing the thread of what I'm doing.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+I'm frustrated by how easily I drift off when trying to study.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Focusing on schoolwork feels impossible; I just can't keep my head in it.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+I keep zoning out during assignments and it's really setting me back.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"I barely sleep at night, and when I do, nightmares wake me up.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+I'm terrified to close my eyes because the bad dreams jolt me awake.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+Sleep isn't an escape; it's just full of horrors that force me up.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"On the rare occasions I do drift off, the nightmares start immediately.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+I'm exhausted but scared to sleep because of what I see when I do.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"Rest is impossible when vivid, scary dreams keep interrupting it.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"I fidget a little more than usual, but nothing extreme.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"I've noticed I'm tapping my foot a bit, but it's manageable.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"Physically, I'm a slightly restless, though not out of control.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"Aside from some minor twitching, I'm sitting still okay.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"I'm a tiny bit jumpy, but it's not a major problem.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"Just a slight increase in fidgeting, nothing to write home about.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+"I don’t enjoy activities like I used to, I force myself to do things.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The spark is gone; I have to drag myself to do hobbies I loved.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"It's a chore to engage in fun things now, the pleasure is missing.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I'm going through the motions, but the joy just isn't there anymore.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Forced participation is the only way I get anything done; the fun has evaporated.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I remember liking these things, but now I just feel numb doing them.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I can’t concentrate at all, I feel like my brain is shutting down.",original,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+My mind is a blank slate; it's terrifyingly hard to focus.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+It feels like my cognitive functions are just powering off completely.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+I'm struggling to hold a single thought; my brain is just stopping.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Total brain fog—I can't focus on anything, and it feels like a system failure.",augmented,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's like the lights are going out upstairs; I can't concentrate.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+No thoughts of self-harm or suicidal ideation.,original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I'm safe; hurting myself isn't something I'm thinking about.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"Thankfully, my mind hasn't gone to that dark place of self-injury.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I want to be clear that I have no intention of ending my life.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Suicide isn't on the table; I'm not having those thoughts.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I'm free of any urges to harm myself.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+I have completely lost my appetite and have lost weight.,original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+"Food is repulsive to me lately, and the pounds are dropping off.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+I've stopped eating almost entirely and I'm noticeably thinner.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+The scale is down because I just have zero desire to eat.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+I've unintentionally lost weight because my hunger is totally gone.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+"Eating feels impossible, so I've shed some weight recently.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+"Energy levels are good, I can do my daily tasks easily.",original,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+I'm actually feeling quite capable and energetic enough for my chores.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+Getting through the day is a breeze; my stamina is back.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+No fatigue here; I'm tackling my to-do list without issue.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+I feel strong and able to handle whatever the day throws at me.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"Thankfully, I've got the energy to manage my daily routine perfectly.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"Feeling down most days, like nothing makes me happy anymore.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+A gray cloud hangs over me constantly; joy seems impossible.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I'm stuck in a rut of unhappiness where nothing cheers me up.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Most of the time I'm just depressed; the things that should make me happy, don't.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's rare that I feel anything other than low; happiness is elusive.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I'm struggling to find a single source of joy in my daily life.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"My eating habits have changed significantly, sometimes I skip meals.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+"I've noticed I'm erratic with food, often missing lunch or dinner.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+My diet is all over the place; I'm not eating as regularly as I should.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+"I'm going long stretches without food, which is new for me.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+Eating has become inconsistent; skipping meals is becoming a habit.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+Significant changes in my diet mean I'm often forgetting to eat.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+"No serious thoughts, just moments of feeling overwhelmed.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+"I'm not in danger, but I do get swamped by stress occasionally.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+"While I'm not spiraling, I do have times where it's all too much.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+"It's just a bit of pressure piling up, nothing dangerous or severe.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+"I get buried under emotion sometimes, but it's not critical.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+"Safe from dark thoughts, but definitely feeling the weight of things now and then.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+I occasionally feel uninterested in activities I usually enjoy.,original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Every now and then, my hobbies just don't appeal to me.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I have these phases where I just don't care about my usual fun stuff.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Sometimes the things I love just feel flat.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Interest wanes sporadically for things that used to be fun.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I'm finding myself indifferent to my pastimes from time to time.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Sometimes I feel down, but it doesn't last long.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+"I have these brief spells of sadness, but they always pass quickly.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+"Every so often I get the blues, though I bounce back pretty fast.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+"It's not a permanent depression, just fleeting moments of feeling low.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+"I dip into sadness occasionally, but I don't get stuck there.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+"My mood drops now and then, but thankfully it's short-lived.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+I can focus well on my studies without distractions.,original,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+My concentration is razor-sharp when I'm hitting the books.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+I'm zoning in on my coursework perfectly; no brain fog here.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+Distractions aren't an issue; I'm fully engaged in my learning.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+I feel productive and clear-headed regarding my academic work.,augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+"Studying is going great, I can maintain my attention span easily.",augmented,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+Even simple tasks drain all my energy.,original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Just washing a dish feels like running a marathon; I'm spent.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The smallest chore absolutely wipes me out.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I have zero reserves; even basic things exhaust me.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's humiliating how tired I get from doing practically nothing.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+My battery is so dead that simple actions feel impossible.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+People say I seem slower in responding and doing things.,original,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+My family keeps asking why I'm moving in slow motion.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I've been told there's a lag in my reactions and movements.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"Apparently, I'm taking forever to answer questions or get things done.",augmented,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"It feels like I'm underwater, and others are noticing my slowness.",augmented,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I'm getting comments about how lethargic and delayed I seem.,augmented,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I have no motivation to do anything, I just stay in bed all day.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I can't find a single reason to leave my mattress, so I don't.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+The drive to exist is gone; I'm just rotting in bed.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I spend my entire day under the covers because I just don't care.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Motivation is non-existent; the bed is my whole world now.,augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I'm paralyzed by apathy, just lying here from morning to night.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I feel like a failure and that I let everyone down.,original,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+The guilt of disappointing everyone is crushing me.,augmented,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+I look in the mirror and just see a total screw-up.,augmented,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"I've failed the people I care about, and I can't forgive myself.",augmented,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+I'm nothing but a disappointment to my family and friends.,augmented,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+It haunts me that I'm not living up to expectations.,augmented,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+"At times I feel I could do better, but it's not overwhelming.",original,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"I have moments of self-critique, but it's nothing I can't handle.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"There's room for improvement, sure, but I'm not beating myself up.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"I know I'm not perfect, but I'm not spiraling over it either.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"I get a bit critical of myself, though it stays within reason.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"It's a healthy level of dissatisfaction, not a crushing one.",augmented,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+"No major changes in mood, I feel mostly okay.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+"I'm pretty steady, no emotional rollercoasters lately.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+Things are stable; I'm maintaining a decent baseline.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+"I'm neither high nor low, just cruising along fine.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+"Emotionally, I'm on an even keel.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+I haven't felt any drastic shifts; I'm doing alright.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1
+"I can’t focus at all, everything seems blurry in my head.",original,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+My thoughts are just a cloud of static; I can't grasp anything.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+Concentration is a joke; my mind is completely fuzzy.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+"I try to think, but it's like wading through thick fog.",augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+It's scary how scattered and blurry my mental state is.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+I can't pin down a single thought; it's all just noise.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+"My appetite fluctuates, but nothing drastic.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"I eat more some days than others, but it's pretty standard.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Hunger comes and goes, but I'm not starving or bingeing.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"There's a little variance in my meals, but nothing concerning.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"I'm not strictly regular with food, but it's not a problem.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"Appetite is a bit wavy, yet overall I'm eating enough.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+My appetite is all over the place; I either overeat or don’t eat at all.,original,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"It's chaotic—some days I stuff myself, and other days I can't look at food.",augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I can't seem to find a middle ground with eating; it's always one extreme or the other.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"My eating habits are totally erratic, swinging between binging and starving.",augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's frustrating because I have no control; I'm either empty or too full.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+I don't know what normal is anymore; I skip meals or eat everything in sight.,augmented,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+No noticeable change in movement or activity levels.,original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+I'm moving around just as much as I usually do.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+My physical activity has remained pretty constant.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+I haven't been more sluggish or more restless; it's the same.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+There's really no difference in how active I am.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+I'm maintaining my normal rhythm of movement.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+I feel tired even after a full night's sleep.,original,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It feels pointless to sleep because I wake up just as exhausted.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I'm getting eight hours, but the fatigue won't go away.",augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Rest doesn't refresh me; I'm drained from the minute I wake up.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+It's disheartening to sleep through the night and still feel this heavy.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Sleep isn't working; I'm perpetually tired regardless of how long I stay in bed.,augmented,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+"I have thoughts about self-harm, but I don’t tell anyone.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"I keep it a secret, but I do think about hurting myself.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+There are these dark urges to injure myself that I'm too afraid to share.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+I'm fighting a private battle with self-harm ideation.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"No one knows this, but I have visions of harming my body.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+I haven't told a soul that I want to cause myself pain.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+"I frequently think about ending everything, I don’t see a way out.",original,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I'm trapped in this hopelessness, and suicide seems like the only escape.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+"There are no options left for me, so I constantly think about death.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+I am consumed by the idea of ending my life because I can't survive this.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+"I look for a future and see nothing, so ending it all feels inevitable.",augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+The thought of checking out is always there because I truly see no other solution.,augmented,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0
