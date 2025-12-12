@@ -7,6 +7,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from src.graph import create_graph
+from src.dashboard_app import create_dashboard
 
 # Initialize graph
 graph = create_graph()
@@ -120,6 +121,10 @@ def create_demo():
             bot, [chatbot, state], [chatbot, state]
         )
         clear.click(lambda: None, None, chatbot, queue=False)
+
+    with demo.route("Dashboard", "/dashboard"):
+        create_dashboard().render()
+        
         
     return demo
 
