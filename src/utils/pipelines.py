@@ -155,6 +155,8 @@ class EmotionPipeline(BasePipeline):
             self.xgb_models = {}
 
     def clean_text(self, text: str) -> str:
+        if isinstance(text, list):
+            text = " ".join(str(x) for x in text)
         if not text: return ""
         text = clean(text)
         text = text.replace('\xe2\x80\x99', "'").replace('\x27', "'")
@@ -220,6 +222,8 @@ class SuicideRiskPipeline(BasePipeline):
             logger.warning(f"[SuicideRiskPipeline] XGBoost model not found at {SUICIDE_XGBOOST_PATH}. Dummy inference.")
             self.xgb_model = None
     def clean_text(self, text: str) -> str:
+        if isinstance(text, list):
+            text = " ".join(str(x) for x in text)
         if not text: return ""
         # Specific reddit cleaning
         text = re.sub(r'http\S+|www\S+|https\S+', '[URL]', text, flags=re.MULTILINE)

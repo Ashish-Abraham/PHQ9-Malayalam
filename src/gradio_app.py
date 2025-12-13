@@ -69,6 +69,10 @@ def chat_logic(message, history, state):
     
     def run_analysis(msg):
         try:
+            # Ensure msg is a string
+            if isinstance(msg, list):
+                msg = " ".join(str(x) for x in msg)
+            
             # Detect Emotion
             emo = detect_emotion(msg)
             update_emotion(emo)
