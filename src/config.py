@@ -5,8 +5,8 @@ LLM_PROVIDER = "groq"
 GROQ_MODEL = "llama-3.1-8b-instant"
 
 # Emotion Pipeline Configuration
-EMOTION_MURIL_PATH = "google/muril-base-cased" # Specific fine-tuned model path
-EMOTION_XGBOOST_PATH = "src/models/xgboost_emotion_models.pkl"
+EMOTION_MURIL_PATH = "/content/muril_cssrs_finetuned" # Specific fine-tuned model path
+EMOTION_XGBOOST_PATH = "/content/xgboost_emotion_models.pkl"
 
 EMOTION_LABELS = [
     'admiration', 'amusement', 'anger', 'annoyance', 'approval',
@@ -18,8 +18,8 @@ EMOTION_LABELS = [
 ]
 
 # Suicide Risk Pipeline Configuration
-SUICIDE_MURIL_PATH = "google/muril-base-cased" # Specific fine-tuned model path
-SUICIDE_XGBOOST_PATH = "src/models/xgboost_suicide_model.pkl"
+SUICIDE_MURIL_PATH = "/content/muril_cssrs_finetuned" # Specific fine-tuned model path
+SUICIDE_XGBOOST_PATH = "/content/xgboost_cssrs_model.json"
 
 # Labels 0-4
 CSSRS_LABELS = {
