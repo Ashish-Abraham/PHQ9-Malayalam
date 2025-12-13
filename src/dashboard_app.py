@@ -115,6 +115,17 @@ def get_discordance(patient):
 # --- Charts ---
 
 def create_symptom_chart(patient):
+    if not patient or not patient.get("symptoms"):
+        # Return empty chart or placeholder
+        fig = go.Figure()
+        fig.update_layout(
+            title="Symptom Profile (Waiting for data...)",
+            yaxis_range=[0, 3],
+            xaxis=dict(visible=False),
+            yaxis=dict(visible=False)
+        )
+        return fig
+
     data = []
     for name, value in patient["symptoms"].items():
         data.append({
@@ -158,6 +169,9 @@ def create_symptom_chart(patient):
     return fig
 
 def create_radar_chart(patient):
+    if not patient or not patient.get("symptoms"):
+         return go.Figure().update_layout(title="Symptom Domain (Waiting for data...)", polar=dict(radialaxis=dict(visible=False)))
+         
     symptoms = patient["symptoms"]
     categories = [
         {"category": "Mood", "patient": (symptoms["Feeling Down"] + symptoms["Interest/Pleasure"]) / 2, "pop": 1.6},
@@ -207,6 +221,9 @@ def create_radar_chart(patient):
     return fig
 
 def create_population_chart(patient):
+    if not patient or "totalScore" not in patient:
+         return go.Figure().update_layout(title="Population Benchmark (Waiting for data...)")
+
     df = pd.DataFrame(POPULATION_DATA)
     
     fig = go.Figure()
@@ -239,6 +256,9 @@ def create_population_chart(patient):
     return fig
 
 def create_gender_chart(patient):
+    if not patient or "gender" not in patient:
+        return go.Figure().update_layout(title="Gender Comparison (Waiting for data...)")
+        
     df = pd.DataFrame(GENDER_COMPARISON)
     colors = ['#ef4444' if g == patient['gender'] else '#8b5cf6' for g in df['gender']]
     
@@ -288,75 +308,123 @@ def check_live_alerts(state):
 def update_dashboard():
     """Poll shared state and update live components."""
     state = get_dashboard_state()
-    return create_live_emotion_chart(state), check_live_alerts(state)
+    
+    # 1. Charts
+    live_emo_chart = create_live_emotion_chart(state)
+    live_risk = check_live_alerts(state)
+    
+    # 2. Patient Info Header (Update in case login happened after dashboard load)
+    header_md = ""
+    patient = state.get("patient") if state else None
+    if patient:
+        header_md = f"# PHQ-9 Clinical Dashboard\n**Patient ID:** {patient.get('id', 'N/A')} | **Name:** {patient.get('name', 'N/A')} | **Age:** {int(patient.get('age', 0))} | **Gender:** {patient.get('gender', 'N/A')}"
+    else:
+        header_md = f"# PHQ-9 Clinical Dashboard\n**Patient ID:** Waiting... | **Status:** No active session"
+
+    # 3. Score Header
+    # Calculate score from real symptoms if available
+    symptoms = state.get("symptoms", {}) if state else {}
+    if symptoms:
+        total_score = sum(symptoms.values())
+        risk = get_risk_level(total_score, symptoms.get("Suicidal Ideation", 0))
+        score_md = f"# {int(total_score)}\n**PHQ-9 Total Score**\n\n<span style='background-color:{risk['color']}; color:white; padding: 4px 8px; border-radius: 4px;'>{risk['level']} Risk</span>"
+    else:
+        score_md = "# --\n**PHQ-9 Total Score**"
+
+    # 5. Other Charts
+    # Ensure patient object has 'totalScore' or calculate it
+    if symptoms:
+        # Default missing keys to 0 for radar chart safety
+        SAFE_KEYS = [
+            "Interest/Pleasure", "Feeling Down", "Sleep Issues", "Fatigue",
+            "Appetite", "Self-Worth", "Concentration", "Psychomotor", "Suicidal Ideation"
+        ]
+        safe_symptoms = {k: symptoms.get(k, 0) for k in SAFE_KEYS}
+        
+        patient_for_charts = {
+            "symptoms": safe_symptoms, 
+            "totalScore": sum(symptoms.values()), 
+            "gender": patient.get("gender") if patient else "Female"
+        }
+    else:
+        patient_for_charts = None
+        
+    symptom_fig = create_symptom_chart(patient_for_charts)
+    radar_fig = create_radar_chart(patient_for_charts)
+    pop_fig = create_population_chart(patient_for_charts)
+    gender_fig = create_gender_chart(patient_for_charts)
+    
+    # 6. External Stressors
+    ext_factors = state.get("external_factors", {}) if state else {}
+    if ext_factors:
+        ext_md = "### External Stressor Profile\n"
+        for factor, value in ext_factors.items():
+            level = ["Good", "Average", "Bad", "Worst"][value] if value < 4 else "Unknown"
+            color = "green" if value == 0 else "orange" if value == 1 else "red"
+            ext_md += f"<span style='color:{color}'>**{factor}**: {level} (Level {value})</span><br>"
+    else:
+        ext_md = "### External Stressor Profile\nWaiting for data..."
+
+    # 7. Action Items
+    if symptoms:
+        # Re-calc risk for action items
+        total_score = sum(symptoms.values())
+        risk_obj = get_risk_level(total_score, symptoms.get("Suicidal Ideation", 0))
+        act_md = f"### Clinical Action Items\n- **{risk_obj['level']} Risk Plan**: {risk_obj['action']}\n- Review suicidal ideation response in detail.\n- Schedule follow-up."
+    else:
+        act_md = "### Clinical Action Items\nWaiting for clinical data..."
+    
+    return live_emo_chart, live_risk, header_md, score_md, symptom_fig, radar_fig, pop_fig, gender_fig, ext_md, act_md
 
 def create_dashboard():
     with gr.Blocks(theme=gr.themes.Soft(), title="Clinical Dashboard") as demo:
         # Header
-        risk = get_risk_level(CURRENT_PATIENT["totalScore"], CURRENT_PATIENT["symptoms"]["Suicidal Ideation"])
-        
         with gr.Row():
             with gr.Column(scale=3):
-                gr.Markdown(f"# PHQ-9 Clinical Dashboard\n"
-                           f"**Patient ID:** {CURRENT_PATIENT['id']} | **Age:** {CURRENT_PATIENT['age']} | **Gender:** {CURRENT_PATIENT['gender']}")
+                header = gr.Markdown("# PHQ-9 Clinical Dashboard\nWaiting for patient data...")
             with gr.Column(scale=1):
-                gr.Markdown(f"# {CURRENT_PATIENT['totalScore']}\n"
-                           f"**PHQ-9 Total Score**\n\n"
-                           f"<span style='background-color:{risk['color']}; color:white; padding: 4px 8px; border-radius: 4px;'>{risk['level']} Risk</span>")
+                score_display = gr.Markdown("# --\n**PHQ-9 Total Score**")
 
-        # Alerts
-        patterns = detect_patterns(CURRENT_PATIENT)
-        if patterns:
-             with gr.Group():
-                gr.Markdown("### Response Pattern Alerts")
-                for p in patterns:
-                    gr.Markdown(f"**{p['message']}** (Type: {p['type']} | Priority: {p['priority']})")
-        
         # LIVE UPDATES SECTION
         with gr.Group():
             gr.Markdown("## 🔴 Live Session Analysis")
             with gr.Row():
                 live_emo_plot = gr.Plot(label="Live Emotions")
                 live_alerts = gr.Markdown(label="Live Alerts")
-            
-            # Timer for polling
-            timer = gr.Timer(value=2) # Update every 2 seconds
-            timer.tick(update_dashboard, outputs=[live_emo_plot, live_alerts])
 
         # Charts Row 1
         with gr.Row():
             with gr.Column():
-                symptom_plot = gr.Plot(create_symptom_chart(CURRENT_PATIENT))
-                discordance = get_discordance(CURRENT_PATIENT)
-                gr.Markdown(f"**Symptom Variance:** {discordance['variance']}\n{discordance['interpretation']}")
+                symptom_plot = gr.Plot(value=create_symptom_chart(None), label="Symptom Profile")
             
             with gr.Column():
-                radar_plot = gr.Plot(create_radar_chart(CURRENT_PATIENT))
-                gr.Info("Clinical Note: Patient shows elevated mood and energy symptoms compared to population baseline.")
+                radar_plot = gr.Plot(value=create_radar_chart(None), label="Symptom Radar")
+                gr.Info("Clinical Note: Radar chart shows domain-level analysis.")
 
         # Charts Row 2
         with gr.Row():
             with gr.Column():
-                pop_plot = gr.Plot(create_population_chart(CURRENT_PATIENT))
+                pop_plot = gr.Plot(value=create_population_chart(None), label="Population Benchmark")
             with gr.Column():
-                gender_plot = gr.Plot(create_gender_chart(CURRENT_PATIENT))
+                gender_plot = gr.Plot(value=create_gender_chart(None), label="Gender Comparison")
 
         # External Stressors & Actions
         with gr.Row():
             with gr.Column():
-                gr.Markdown("### External Stressor Profile")
-                for factor, value in CURRENT_PATIENT["externalFactors"].items():
-                    level = ["Good", "Average", "Bad", "Worst"][value]
-                    color = "green" if value == 0 else "orange" if value == 1 else "red"
-                    gr.Markdown(f"**{factor}**: {level} (Level {value})")
+                ext_md = gr.Markdown("### External Stressor Profile\nWaiting for data...")
             
             with gr.Column():
-                gr.Markdown(f"### Clinical Action Items\n"
-                           f"- {risk['action']}\n"
-                           f"- Review suicidal ideation response in detail with patient\n"
-                           f"- Consider referral for financial counseling and academic support services\n"
-                           f"- Schedule follow-up assessment in 2 weeks")
-                           
+                act_md = gr.Markdown("### Clinical Action Items\nWaiting for data...")
+
+        # Timer for polling
+        timer = gr.Timer(value=2) # Update every 2 seconds
+        
+        # Update everything
+        timer.tick(
+            update_dashboard, 
+            outputs=[live_emo_plot, live_alerts, header, score_display, symptom_plot, radar_plot, pop_plot, gender_plot, ext_md, act_md]
+        )
+                            
     return demo
 
 if __name__ == "__main__":

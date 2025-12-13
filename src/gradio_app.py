@@ -95,36 +95,84 @@ def gradio_chat(message, history, state):
 
 def create_demo():
     with gr.Blocks() as demo:
-        gr.Markdown("# PHQ-9 Chatbot")
-        
-        state = gr.State(init_state())
-        
-        chatbot = gr.Chatbot()
-        msg = gr.Textbox(placeholder="Type your message here...")
-        clear = gr.Button("Clear")
-        
-        def user(user_message, history):
-            return "", history + [{"role": "user", "content": user_message}]
-
-        def bot(history, current_state):
-            # history is now a list of dicts. The last one is the user message.
-            user_message = history[-1]["content"]
-            # We don't pass history to chat_logic, but chat_logic signature expects it.
-            # chat_logic doesn't use history, so safe to pass the new format.
-            bot_message, new_state = gradio_chat(user_message, history[:-1], current_state)
+        # === Login Section ===
+        with gr.Column(visible=True) as login_view:
+            gr.Markdown("# Welcome to the PHQ-9 Assessment\nPlease enter your details to begin.")
+            with gr.Row():
+                name_input = gr.Textbox(label="Full Name", placeholder="Jane Doe")
+                age_input = gr.Number(label="Age", value=25, precision=0)
+                gender_input = gr.Dropdown(label="Gender", choices=["Female", "Male", "Other"], value="Female")
             
-            # Append bot response
-            history.append({"role": "assistant", "content": bot_message})
-            return history, new_state
+            start_btn = gr.Button("Start Assessment", variant="primary")
+            error_box = gr.Markdown(visible=False, value="Please enter your name.")
 
-        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-            bot, [chatbot, state], [chatbot, state]
+        # === Chat Section ===
+        with gr.Column(visible=False) as chat_view:
+            gr.Markdown("# PHQ-9 Chatbot")
+            
+            state = gr.State(init_state())
+            
+            chatbot = gr.Chatbot()
+            msg = gr.Textbox(placeholder="Type your message here...")
+            clear = gr.Button("Clear")
+            
+            def user(user_message, history):
+                return "", history + [{"role": "user", "content": user_message}]
+
+            def bot(history, current_state):
+                # history is now a list of dicts. The last one is the user message.
+                user_message = history[-1]["content"]
+                # We don't pass history to chat_logic, but chat_logic signature expects it.
+                # chat_logic doesn't use history, so safe to pass the new format.
+                bot_message, new_state = gradio_chat(user_message, history[:-1], current_state)
+                
+                # Append bot response
+                history.append({"role": "assistant", "content": bot_message})
+                return history, new_state
+
+            msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+                bot, [chatbot, state], [chatbot, state]
+            )
+            clear.click(lambda: None, None, chatbot, queue=False)
+
+        # === Login Logic ===
+        def start_session(name, age, gender):
+            if not name.strip():
+                return gr.update(visible=True), gr.update(visible=True), gr.update(visible=False), init_state()
+            
+            # 1. Update Dashboard Shared State
+            from src.shared_state import update_patient_data, clear_state
+            
+            # Clear previous session data
+            clear_state()
+            
+            import random
+            patient_id = f"P-{random.randint(1000, 9999)}"
+            patient_data = {
+                "id": patient_id,
+                "name": name,
+                "age": age,
+                "gender": gender
+            }
+            update_patient_data(patient_data)
+            
+            # 2. Initialize Chat State with Name
+            new_state = init_state()
+            new_state["patient_info"] = name # Store name for rapport
+            
+            # 3. Switch Views
+            return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True), new_state
+
+        start_btn.click(
+            start_session,
+            inputs=[name_input, age_input, gender_input],
+            outputs=[login_view, error_box, chat_view, state]
         )
-        clear.click(lambda: None, None, chatbot, queue=False)
 
+
+    dashboard_blocks = create_dashboard()
     with demo.route("Dashboard", "/dashboard"):
-        create_dashboard().render()
-        
+        dashboard_blocks.render()
         
     return demo
 

@@ -31,7 +31,7 @@ def permission_node(state: AgentState):
     if last_message and last_message.type == 'human':
         from src.utils.message_utils import get_message_text
         content = get_message_text(last_message).lower()
-        if "yes" in content or "sure" in content or "okay" in content:
+        if any(word in content for word in ["yes", "sure", "okay", "go ahead", "ready", "please", "start", "begin", "ya", "yep", 'shoot', 'shoot it', 'come on', 'ok', 'yea', 'alright', 'fine', 'correct', 'agreed']):
             # User granted permission. 
             # We return a message so that the next node (questionnaire) sees the last message as AI, 
             # preventing it from treating "Yes" as the answer to Q1.
@@ -47,6 +47,7 @@ def permission_node(state: AgentState):
     Now, you need to gently ask for their permission to conduct a brief depression screening (PHQ-9).
     Explain that it will help understand their condition better.
     If the user has already agreed, acknowledge it and prepare to start.
+    
     """
     
     response = llm.invoke([{"role": "system", "content": system_prompt}] + messages)

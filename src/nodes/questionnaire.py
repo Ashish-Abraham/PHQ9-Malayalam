@@ -46,6 +46,8 @@ def questionnaire_node(state: AgentState):
             "score": int (0-3, or null if not scorable),
             "clarification_needed": bool
         }}
+
+        
         """
         
         try:
@@ -68,12 +70,28 @@ def questionnaire_node(state: AgentState):
                 current_index += 1
                 state['phq9_responses'] = responses
                 state['current_question_index'] = current_index
+                
+                from src.shared_state import update_symptoms
+                # Questions mapping for dashboard keys
+                DASHBOARD_KEYS = [
+                    "Interest/Pleasure", "Feeling Down", "Sleep Issues", "Fatigue",
+                    "Appetite", "Self-Worth", "Concentration", "Psychomotor", "Suicidal Ideation"
+                ]
+                
+                # Build dashboard-friendly dict
+                dash_symptoms = {}
+                for idx, score in responses.items():
+                    if idx < len(DASHBOARD_KEYS):
+                        dash_symptoms[DASHBOARD_KEYS[idx]] = score
+                
+                update_symptoms(dash_symptoms)
+                # ------------------------
             else:
                 # Invalid/Ambiguous response
                 # Generate a clarification request
                 clarification_prompt = f"""
                 The user's response "{last_response}" to the question "{PHQ9_QUESTIONS[current_index]}" was ambiguous or irrelevant.
-                Politely ask them to clarify it as 'Not at all', 'Several days', 'More than half the days', 'Nearly every day' or bring them back to the topic.
+                Politely ask them to clarify it as 'Not at all', 'Several days', 'More than half the days', 'Nearly every day' or bring them back to the topic. 
                 """
                 clarification = llm.invoke([{"role": "system", "content": clarification_prompt}])
                 return {"messages": [clarification], "phase": "questionnaire"}

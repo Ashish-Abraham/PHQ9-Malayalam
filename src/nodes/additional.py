@@ -16,8 +16,16 @@ def additional_node(state: AgentState):
     if not financial:
         if messages and messages[-1].type == 'human' and state.get('phase') == 'additional_financial':
              # Store answer
+             # Store answer
              from src.utils.message_utils import get_message_text
-             return {"financial_distress": get_message_text(messages[-1]), "phase": "additional_study", "messages": [AIMessage(content="Do you have any study or work-related pressure?")]}
+             fin_resp = get_message_text(messages[-1])
+             
+             # Simple heuristic mapping for dashboard (0=Good, 1=Avg, 2=Bad)
+             score = 2 if "yes" in fin_resp.lower() else 0
+             from src.shared_state import update_external_factors
+             update_external_factors({"Financial Pressure": score})
+             
+             return {"financial_distress": fin_resp, "phase": "additional_study", "messages": [AIMessage(content="Do you have any study or work-related pressure?")]}
         
         # Ask financial
         return {"phase": "additional_financial", "messages": [AIMessage(content="Do you have any financial distress?")]}
@@ -25,8 +33,16 @@ def additional_node(state: AgentState):
     if not study:
          if messages and messages[-1].type == 'human' and state.get('phase') == 'additional_study':
              # Store answer
+             # Store answer
              from src.utils.message_utils import get_message_text
-             return {"study_pressure": get_message_text(messages[-1]), "phase": "advice"}
+             study_resp = get_message_text(messages[-1])
+             
+             # Simple heuristic mapping
+             score = 2 if "yes" in study_resp.lower() else 0
+             from src.shared_state import update_external_factors
+             update_external_factors({"Study Pressure": score})
+             
+             return {"study_pressure": study_resp, "phase": "advice"}
          
          # Ask study (should be covered by the return in financial block, but just in case)
          return {"phase": "additional_study", "messages": [AIMessage(content="Do you have any study or work-related pressure?")]}

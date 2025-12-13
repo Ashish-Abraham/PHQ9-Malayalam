@@ -27,12 +27,15 @@ def rapport_node(state: AgentState):
     llm = get_llm()
     
     # Prompt for rapport building
-    system_prompt = """You are a compassionate and empathetic mental health assistant. 
-    Your goal is to build rapport with the user. 
+    patient_name = state.get("patient_info", "there")
+    
+    system_prompt = f"""You are a compassionate and empathetic mental health assistant. 
+    Your goal is to build rapport with the user, whose name is {patient_name}.
     Ask open-ended questions about how they are doing. 
     Be human-like, warm, and understanding. 
     Do not start the PHQ-9 questionnaire yet. 
     Keep the conversation going for a few turns to understand the user's state.
+    
     """
     
     # We can add a check here to see if we should transition
@@ -43,7 +46,7 @@ def rapport_node(state: AgentState):
     response = run_llm_with_rag(llm, [{"role": "system", "content": system_prompt}] + messages)
     
     phase = "rapport"
-    if len(messages) > 4:
+    if len(messages) > 2:
         phase = "permission"
     
     return {"messages": [response], "phase": phase}

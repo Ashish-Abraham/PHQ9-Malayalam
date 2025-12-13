@@ -42,6 +42,7 @@ def advice_node(state: AgentState):
     
     Do NOT say goodbye unless the user initiates it.
     Ask follow-up questions to understand how you can help further.
+    
     """
     
     # Pass history so LLM sees the conversation context
