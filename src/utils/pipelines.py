@@ -195,13 +195,11 @@ class EmotionPipeline(BasePipeline):
 
 class SuicideRiskPipeline(BasePipeline):
     _instance = None
-
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super(SuicideRiskPipeline, cls).__new__(cls)
             cls._instance.initialized = False
         return cls._instance
-
     def __init__(self):
         if self.initialized:
             return
@@ -211,18 +209,16 @@ class SuicideRiskPipeline(BasePipeline):
         self._load_models()
         self.initialized = True
         logger.info("[SuicideRiskPipeline] Initialized successfully.")
-
     def _load_models(self):
         self._load_muril_base(SUICIDE_MURIL_PATH)
         
         if os.path.exists(SUICIDE_XGBOOST_PATH):
             logger.info(f"[SuicideRiskPipeline] Loading XGBoost model from {SUICIDE_XGBOOST_PATH}...")
-            with open(SUICIDE_XGBOOST_PATH, 'rb') as f:
-                self.xgb_model = pickle.load(f)
+            self.xgb_model = xgb.XGBClassifier()
+            self.xgb_model.load_model(SUICIDE_XGBOOST_PATH)
         else:
             logger.warning(f"[SuicideRiskPipeline] XGBoost model not found at {SUICIDE_XGBOOST_PATH}. Dummy inference.")
             self.xgb_model = None
-
     def clean_text(self, text: str) -> str:
         if not text: return ""
         # Specific reddit cleaning
@@ -230,10 +226,8 @@ class SuicideRiskPipeline(BasePipeline):
         text = re.sub(r'\[deleted\]|\[removed\]', '', text)
         text = re.sub(r'[^\w\s.,!?;:\'\"-]', ' ', text)
         return re.sub(r'\s+', ' ', text).strip()
-
     def predict_risk(self, text: str): # Alias for consistency or specific naming
         return self.predict(text)
-
     def predict(self, text: str):
         cleaned_text = self.clean_text(text)
         if len(cleaned_text) < 10:
@@ -242,7 +236,6 @@ class SuicideRiskPipeline(BasePipeline):
         features = self.extract_features_base([cleaned_text])
         if self.xgb_model is None:
              return {'label': 'Supportive', 'label_id': 0, 'alert': False, 'probabilities': {}}
-
         try:
             probs = self.xgb_model.predict_proba(features)[0]
             pred_id = int(np.argmax(probs))
@@ -292,3 +285,4 @@ def detect_suicidal_language(text: str) -> bool:
     pipe = get_suicide_pipeline()
     result = pipe.predict(text) # Uses predict (alias predict_risk logic)
     return result.get('alert', False)
+
