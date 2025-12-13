@@ -72,6 +72,9 @@ def update_external_factors(factors):
 
 def _write_state(state):
     """Write state to file with lock."""
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    
     with open(STATE_FILE, "w") as f:
         try:
             fcntl.flock(f, fcntl.LOCK_EX)
