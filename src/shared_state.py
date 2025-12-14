@@ -53,7 +53,6 @@ def update_symptoms(symptoms):
     
     state["symptoms"] = symptoms
     state["last_updated"] = time.time()
-    print(f"[DEBUG] Updated symptoms with: {symptoms}")
     _write_state(state)
 
 def update_external_factors(factors):
@@ -82,7 +81,7 @@ def _write_state(state):
             fcntl.flock(f, fcntl.LOCK_UN)
         except Exception as e:
             from src.debug_utils import log_debug
-            log_debug(f"Error writing state: {e}")
+            #log_debug(f"Error writing state: {e}")
 
 def _read_state():
     """Read state from file with lock."""
@@ -96,7 +95,7 @@ def _read_state():
             return state
     except Exception as e:
         from src.debug_utils import log_debug
-        log_debug(f"Error reading state: {e}")
+        #log_debug(f"Error reading state: {e}")
         return None
 
 def update_emotion(emotion):

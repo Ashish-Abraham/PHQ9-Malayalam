@@ -13,3 +13,5 @@ class AgentState(TypedDict):
     financial_distress: str
     study_pressure: str
     permission_granted: bool
+    permission_asked: bool
+    language: str

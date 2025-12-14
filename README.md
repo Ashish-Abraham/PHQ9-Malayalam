@@ -43,11 +43,17 @@ An empathetic, AI-powered mental health chatbot that administers the PHQ-9 depre
     *   **Pipelines**: By default, the ML pipelines (Emotion/Suicide Risk) load on startup. This requires significant RAM/GPU.
     *   **Testing**: Set `DISABLE_PIPELINES=1` in `.env` (or env var) to skip model loading for faster dev/testing.
 
+### Google Colab Setup
+
+If running in Google Colab:
+1.  **Public URL**: You must enable `share=True` in `src/gradio_app.py`. Find the `demo.launch()` line and change it to `demo.launch(...,share=True)`.
+2.  **Model Paths**: Before running the full mode, open `src/config.py` and update `EMOTION_MURIL_PATH`, `EMOTION_XGBOOST_PATH`, `SUICIDE_MURIL_PATH`, and `SUICIDE_XGBOOST_PATH` to point to the correct locations of your uploaded model files.
+
 ## Running the Application
 
 ### Light Mode (Recommended for testing chat logic)
 
-Run without loading the heavy ML models:
+Run without loading the heavy ML models (only chat):
 
 ```bash
 DISABLE_PIPELINES=1 python3 src/gradio_app.py

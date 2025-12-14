@@ -2,7 +2,8 @@
 # Options: "azure", "vllm", "huggingface", "groq"
 LLM_PROVIDER = "groq"
 
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "meta-llama/llama-4-maverick-17b-128e-instruct"
+GROQ_MODEL2 = "llama-3.1-8b-instant"
 
 # Emotion Pipeline Configuration
 EMOTION_MURIL_PATH = "/content/muril_cssrs_finetuned" # Specific fine-tuned model path

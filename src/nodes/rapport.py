@@ -28,15 +28,29 @@ def rapport_node(state: AgentState):
     
     # Prompt for rapport building
     patient_name = state.get("patient_info", "there")
+    language = state.get("language", "English")
     
-    system_prompt = f"""You are a compassionate and empathetic mental health assistant. 
-    Your goal is to build rapport with the user, whose name is {patient_name}.
-    Ask open-ended questions about how they are doing. 
-    Be human-like, warm, and understanding. 
-    Do not start the PHQ-9 questionnaire yet. 
-    Keep the conversation going for a few turns to understand the user's state.
-    
-    """
+    if language == "Malayalam":
+        system_prompt = f"""You are a compassionate and empathetic mental health assistant. 
+        Your goal is to build rapport with the user, whose name is {patient_name}.
+        You MUST communicate in Malayalam (Malayalam script ONLY).
+        Ask open-ended questions descriptively about how they are doing. 
+        Be human-like, warm, and understanding.
+        Avoid one-word or direct questions. 
+        Do not start the PHQ-9 questionnaire yet. 
+        Keep the conversation going for a few turns to understand the user's state.
+        
+        """
+    else:
+        system_prompt = f"""You are a compassionate and empathetic mental health assistant. 
+        Your goal is to build rapport with the user, whose name is {patient_name}.
+        Ask open-ended questions descriptively about how they are doing. 
+        Be human-like, warm, and understanding.
+        Avoid one-word or direct questions. 
+        Do not start the PHQ-9 questionnaire yet. 
+        Keep the conversation going for a few turns to understand the user's state.
+        
+        """
     
     # We can add a check here to see if we should transition
     # For simplicity, let's say after 5 turns we suggest moving on, 

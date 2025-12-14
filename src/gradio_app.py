@@ -12,6 +12,7 @@ from src.dashboard_app import create_dashboard
 # Initialize graph
 graph = create_graph()
 
+
 def init_state():
     """Initialize the chat state."""
     return {
@@ -22,7 +23,8 @@ def init_state():
         "patient_info": "",
         "financial_distress": "",
         "study_pressure": "",
-        "permission_granted": False
+        "permission_granted": False,
+        "language": "English"
     }
 
 def chat_logic(message, history, state):
@@ -106,6 +108,7 @@ def create_demo():
                 name_input = gr.Textbox(label="Full Name", placeholder="Jane Doe")
                 age_input = gr.Number(label="Age", value=25, precision=0)
                 gender_input = gr.Dropdown(label="Gender", choices=["Female", "Male", "Other"], value="Female")
+                language_input = gr.Dropdown(label="Language", choices=["English", "Malayalam"], value="English")
             
             start_btn = gr.Button("Start Assessment", variant="primary")
             error_box = gr.Markdown(visible=False, value="Please enter your name.")
@@ -140,10 +143,9 @@ def create_demo():
             clear.click(lambda: None, None, chatbot, queue=False)
 
         # === Login Logic ===
-        def start_session(name, age, gender):
+        def start_session(name, age, gender, language):
             if not name.strip():
-                return gr.update(visible=True), gr.update(visible=True), gr.update(visible=False), init_state()
-            
+                return gr.update(visible=True), gr.update(visible=True), gr.update(visible=False), init_state(), []           
             # 1. Update Dashboard Shared State
             from src.shared_state import update_patient_data, clear_state
             
@@ -163,14 +165,34 @@ def create_demo():
             # 2. Initialize Chat State with Name
             new_state = init_state()
             new_state["patient_info"] = name # Store name for rapport
+            new_state["language"] = language
+            
+            # Seed with initial AI message
+            WELCOME_MESSAGE_MALAYALAM = f"""നമസ്കാരം {name} 😊 എന്റെ പേര് “സഹായി”— നിങ്ങളുടെ വിശ്വസ്തമായ മെന്റൽ ഹെൽത്ത് കൂട്ടുകാരൻ.
+ഇവിടെ നിങ്ങൾക്ക് സുരക്ഷിതമായി, ഭയമില്ലാതെ, മനസ്സുതുറന്ന് സംസാരിക്കാം.
+ചെറുതായാലും വലുതായാലും, നിങ്ങളെ അലട്ടുന്ന എന്തും എന്നോട് പറയാം.
+ഞാൻ നിങ്ങളെ വിധിക്കില്ല — കേൾക്കും, മനസ്സിലാക്കും, കൂടെ നിൽക്കും 💙"""
+
+            WELCOME_MESSAGE_ENGLISH = f"""Hello {name} 😊 I am "Sahayi" — your trusted mental health companion.
+Here you can speak openly, safely, and without fear.
+No matter how big or small, you can tell me whatever is bothering you.
+I won't judge you — I will listen, understand, and stand by you 💙"""
+
+            welcome_msg = WELCOME_MESSAGE_MALAYALAM if language == "Malayalam" else WELCOME_MESSAGE_ENGLISH
+
+            initial_message = AIMessage(content=welcome_msg)
+            new_state["messages"].append(initial_message)
+            
+            # Initial history for Chatbot component
+            initial_history = [{"role": "assistant", "content": welcome_msg}]
             
             # 3. Switch Views
-            return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True), new_state
+            return gr.update(visible=False), gr.update(visible=False), gr.update(visible=True), new_state, initial_history
 
         start_btn.click(
             start_session,
-            inputs=[name_input, age_input, gender_input],
-            outputs=[login_view, error_box, chat_view, state]
+            inputs=[name_input, age_input, gender_input, language_input],
+            outputs=[login_view, error_box, chat_view, state, chatbot]
         )
 
 
@@ -182,4 +204,4 @@ def create_demo():
 
 if __name__ == "__main__":
     demo = create_demo()
-    demo.launch(server_name="0.0.0.0", server_port=7860, share=True)
+    demo.launch(server_name="0.0.0.0", server_port=7860)
