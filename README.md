@@ -1,4 +1,8 @@
 # PHQ-9 Mental Health Chatbot
+<p align="center">
+  <img src="data/ui2.jpeg" width="350" style="margin-right:20px;" />
+  <img src="data/screencapture-52a0d5e555b5a0a245-gradio-live-dashboard-2025-12-13-18_37_59.png" width="350" />
+</p>
 
 An empathetic, AI-powered mental health chatbot that administers the PHQ-9 depression screening, assesses risk, and provides personalized advice using a Knowledge Graph and LLM.
 
@@ -76,3 +80,7 @@ Access the web interface at `http://localhost:7860` and dashboard at `http://loc
 - **State Management**: Uses `LangGraph` for stateful transitions (Rapport -> Permission -> Questionnaire -> Advice).
 - **Nodes**: Logical units handling different phases of the conversation (`src/nodes/`).
 - **Graph**: Defined in `src/graph.py`, managing the flow and routing.
+
+
+
+
